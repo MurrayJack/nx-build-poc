@@ -25,7 +25,7 @@ jobs:
     
       - run: npm install
       # - run: npx nx-cloud start-ci-run
-      - run: npx nx affected --target=build --parallel --max-parallel=3
+      - run: npx nx affected --target=build
       # - run: npx nx affected --target=test --parallel --max-parallel=3
       # - run: npx nx affected --target=lint --parallel --max-parallel=3
       # - run: npx nx affected --target=e2e --parallel --max-parallel=1
