@@ -31,25 +31,4 @@ jobs:
       # - run: npx nx affected --target=e2e --parallel --max-parallel=1
       # - run: npx nx-cloud stop-all-agents     
 
-  agents:
-    runs-on: ubuntu-latest
-    name: Agent 1
-    timeout-minutes: 15
-    strategy:
-      matrix:
-        agent: [ 1, 2, 3 ]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with: 
-          node-version: '14'
-
-      - name: Setup StarRez Packages auth
-        run: |
-          npm config set '@starrez:registry' https://www.myget.org/F/starrezpackages/npm/
-          npm config set '//www.myget.org/F/starrezpackages/npm/:always-auth' true
-          npm config set '//www.myget.org/F/starrezpackages/npm/:_authToken' ${{ secrets.MYGETACCESSTOKEN_READ }}
-
-      - run: npm install
-      - name: Start Nx Agent ${{ matrix.agent }}
-        run: npx nx-cloud start-agent
+  
