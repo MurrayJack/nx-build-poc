@@ -32,8 +32,17 @@ jobs:
 
       - run: npx nx affected --target=build
 
-      - run: npx nx affected --target=version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - run: npx nx affected --target=version
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run manifest
+
+      # - name: Tag last-release
+      #   shell: bash
+      #   run: |
+      #     git tag -f last-release
+      #     git push origin last-release --force
+
+
+
