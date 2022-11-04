@@ -22,12 +22,19 @@ jobs:
       - uses: actions/setup-node@v1
         with: 
           node-version: '14'
+
+      - name: Setup Git
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "oldgit@starrez.com"
     
       - run: npm install
       # - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build
 
-      - run: npx nx affected --target=version
+      - run: npx nx affected --base=last-release --target=version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run manifest
 
