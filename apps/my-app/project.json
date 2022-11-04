@@ -75,6 +75,29 @@
         "jestConfig": "apps/my-app/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "make": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "node ./.scripts/script.js"
+          }
+        ]
+      }
+    },
+    "aaa": {
+      "executor": "nx:run-script",
+      "outputs": ["{projectRoot}/dist", "{projectRoot}/docs"],
+      "options": {
+        "script": "build-my-project"
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
+      }
     }
   },
   "tags": []
