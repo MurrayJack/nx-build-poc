@@ -26,15 +26,15 @@ jobs:
       - name: Setup Git
         run: |
           git config user.name "GitHub Bot"
-          git config user.email "oldgit@starrez.com"
+          git config user.email "mjack@starrez.com"
     
       - run: npm install
 
       - run: npx nx affected --target=build
 
-      # - run: npx nx affected --target=version
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npx nx affected --target=version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run manifest
 
