@@ -12,6 +12,11 @@ let data = {
     versions: [],
 }
 
+if (!fs.existsSync("./dist", {folders: true})) {
+    console.log("nothing todo")
+    return;
+}
+
 if (fs.existsSync("./dist/manifest.json")) {
     const json = fs.readFileSync("./dist/manifest.json", 'utf8')
     data = JSON.parse(json)
