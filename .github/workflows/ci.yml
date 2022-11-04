@@ -29,17 +29,11 @@ jobs:
           git config user.email "oldgit@starrez.com"
     
       - run: npm install
-      # - run: npx nx-cloud start-ci-run
+
       - run: npx nx affected --target=build
 
-      - run: npx nx affected --base=last-release --target=version
+      - run: npx nx affected --target=version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: npm run manifest
-
-      
-      # - run: npx nx affected --target=test --parallel --max-parallel=3
-      # - run: npx nx affected --target=lint --parallel --max-parallel=3
-      # - run: npx nx affected --target=e2e --parallel --max-parallel=1
-      # - run: npx nx-cloud stop-all-agents     
