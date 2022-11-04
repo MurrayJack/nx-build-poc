@@ -29,7 +29,7 @@ jobs:
 
       - run: npx nx affected --target=version
 
-      - run: npx nx affected --target=make
+      - run: npm run manifest
 
       
       # - run: npx nx affected --target=test --parallel --max-parallel=3
