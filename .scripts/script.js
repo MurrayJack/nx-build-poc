@@ -59,7 +59,7 @@ const saveVersionJSON = (data) => {
             data.versions.push(minVersion)
         }
 
-        data[uiVersion] = version;
+        data["uiVersion"] = version;
         
         // add the main and the polly fill to this version number
         data[minVersion] = {
