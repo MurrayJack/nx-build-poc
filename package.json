@@ -8,7 +8,8 @@
     "build": "nx build",
     "test": "nx test",
     "prepare": "husky install",
-    "manifest": "node ./.scripts/script.js"
+    "manifest": "node ./.scripts/script.js",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "private": true,
   "dependencies": {
