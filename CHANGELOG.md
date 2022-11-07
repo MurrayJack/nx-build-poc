@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/MurrayJack/nx-build-poc/compare/v2.4.0...v2.4.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* changed the title ([6aaf131](https://github.com/MurrayJack/nx-build-poc/commit/6aaf13160e22cc30d56029fbc52a63a9953cb9df))
+
 # [2.4.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.3.0...v2.4.0) (2022-11-07)
 
 
