@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.3.0...v2.4.0) (2022-11-07)
+
+
+### Features
+
+* nom nom nom ([c22f237](https://github.com/MurrayJack/nx-build-poc/commit/c22f23724bf17c7e89ffba5ae2176e0ed778c75d))
+
 # [2.3.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.2.0...v2.3.0) (2022-11-07)
 
 
