@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/MurrayJack/nx-build-poc/compare/my-app-0.1.0...my-app-0.2.0) (2022-11-07)
+
+
+### Features
+
+* **my-app:** changed the name ([7b1b58c](https://github.com/MurrayJack/nx-build-poc/commit/7b1b58cf2f6f8aec20bd75625ad7c62ed62cdb60))
+
 ## 0.1.0 (2022-11-07)
 
 
