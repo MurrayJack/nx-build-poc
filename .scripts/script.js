@@ -63,6 +63,7 @@ const saveVersionJSON = (data) => {
         
         // add the main and the polly fill to this version number
         data[minVersion] = {
+            uiVersion: version,
             [app]: {
                     main,
                     polyfill
