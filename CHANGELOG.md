@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.2.0...v2.3.0) (2022-11-07)
+
+
+### Features
+
+* **app:** changed the name for the millionth time ([02a1de1](https://github.com/MurrayJack/nx-build-poc/commit/02a1de1319ae4e29a7e339b98c34233e8a4c77d7))
+
 # [2.2.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.1.0...v2.2.0) (2022-11-07)
 
 
