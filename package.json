@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "2.4.3",
+  "version": "2.4.4",
   "license": "MIT",
   "min-srw-version": "10.9.42",
   "scripts": {
