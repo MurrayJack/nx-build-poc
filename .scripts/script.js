@@ -5,16 +5,22 @@ console.log("Manifest script running");
 const package = require("../package.json");
 const minVersion = package["min-srw-version"];
 
+// get out of jail
+if (!fs.existsSync("./dist", {folders: true})) {
+    console.log("nothing todo")
+    return;
+}
+
+if (!fs.existsSync("./dist/apps", {folders: true})) {
+    console.log("nothing todo")
+    return;
+}
+
 const getPreviousData = () => {
     let data = {
         date: (new Date()).toISOString(),
         apps: [],
         versions: [],
-    }
-
-    if (!fs.existsSync("./dist", {folders: true})) {
-        console.log("nothing todo")
-        return;
     }
     
     if (fs.existsSync("./dist/manifest.json")) {
