@@ -28,13 +28,11 @@ jobs:
           git config user.name "GitHub Bot"
           git config user.email "mjack@starrez.com"
     
-      - run: npm install
+      - name: NPM install
+        run: npm install
 
-      - run: npx nx affected --target=build
-
-      - run: npx nx affected --target=version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: npx nx affected --target=build
 
       - name: Release
         env:
@@ -42,14 +40,9 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release --branches=main
 
-      # - run: npm run semantic
-      - run: npm run manifest
+      - name: Release
+        run: node ./.scripts/script.js
 
-      # - name: Tag last-release
-      #   shell: bash
-      #   run: |
-      #     git tag -f last-release
-      #     git push origin last-release --force
 
 
 
