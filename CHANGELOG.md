@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/MurrayJack/nx-build-poc/compare/v2.4.2...v2.4.3) (2022-11-07)
+
+
+### Performance Improvements
+
+* **pencil:** changed this and upped the SRW version ([f9c6966](https://github.com/MurrayJack/nx-build-poc/commit/f9c69664f91fe6ddc782520e8801a5bd6d5f9bb5))
+
 ## [2.4.2](https://github.com/MurrayJack/nx-build-poc/compare/v2.4.1...v2.4.2) (2022-11-07)
 
 
