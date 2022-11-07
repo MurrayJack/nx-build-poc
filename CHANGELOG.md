@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.1.0...v2.2.0) (2022-11-07)
+
+
+### Features
+
+* **my-app:** changed the name ([7b1b58c](https://github.com/MurrayJack/nx-build-poc/commit/7b1b58cf2f6f8aec20bd75625ad7c62ed62cdb60))
+
 # [2.1.0](https://github.com/MurrayJack/nx-build-poc/compare/v2.0.0...v2.1.0) (2022-11-07)
 
 
