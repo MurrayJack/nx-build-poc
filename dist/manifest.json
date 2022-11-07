@@ -1,0 +1,22 @@
+{
+  "date": "2022-11-04T00:04:53.979Z",
+  "apps": [
+    "my-app"
+  ],
+  "versions": [
+    "10.9.40",
+    "10.9.41"
+  ],
+  "10.9.40": {
+    "my-app": {
+      "main": "main.58f0274b387d2288.js",
+      "polyfill": "polyfills.8a8a2aae9b5fb4c9.js"
+    }
+  },
+  "10.9.41": {
+    "my-app": {
+      "main": "main.58f0274b387d2288.js",
+      "polyfill": "polyfills.8a8a2aae9b5fb4c9.js"
+    }
+  }
+}
