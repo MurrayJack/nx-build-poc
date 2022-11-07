@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.0-development",
+  "version": "2.0.0",
   "license": "MIT",
   "min-srw-version": "10.9.41",
   "scripts": {
@@ -8,7 +8,9 @@
     "build": "nx build",
     "test": "nx test",
     "prepare": "husky install",
-    "manifest": "node ./.scripts/script.js"
+    "manifest": "node ./.scripts/script.js",
+    "semantic-release": "semantic-release --branches=main",
+    "version_111": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "private": true,
   "dependencies": {
