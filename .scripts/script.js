@@ -3,6 +3,7 @@ const fs = require("fs")
 console.log("Manifest script running");
 
 const package = require("../package.json");
+const version = package["version"];
 const minVersion = package["min-srw-version"];
 
 // get out of jail
@@ -57,6 +58,8 @@ const saveVersionJSON = (data) => {
         if (!data.versions.some(e => e === minVersion)) {
             data.versions.push(minVersion)
         }
+
+        data[uiVersion] = version;
         
         // add the main and the polly fill to this version number
         data[minVersion] = {
