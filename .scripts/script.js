@@ -27,6 +27,8 @@ const getPreviousData = () => {
         const json = fs.readFileSync("./dist/manifest.json", 'utf8')
         data = JSON.parse(json)
     }    
+
+    return data;
 }
 
 const saveVersionJSON = (data) => {
@@ -67,7 +69,8 @@ const saveVersionJSON = (data) => {
     });
 
     saveVersionJSON(data);
+    console.log(JSON.stringify(data, undefined, 2))
 })()
 
-console.log(JSON.stringify(data, undefined, 2))
+
 console.log("Manifest script: Complete");
