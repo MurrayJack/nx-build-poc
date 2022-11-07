@@ -1,3 +1,10 @@
+## [2.4.2](https://github.com/MurrayJack/nx-build-poc/compare/v2.4.1...v2.4.2) (2022-11-07)
+
+
+### Bug Fixes
+
+* big app funzies ([8fe7673](https://github.com/MurrayJack/nx-build-poc/commit/8fe7673745005a873e5844a965b4bc7232f49263))
+
 ## [2.4.1](https://github.com/MurrayJack/nx-build-poc/compare/v2.4.0...v2.4.1) (2022-11-07)
 
 
